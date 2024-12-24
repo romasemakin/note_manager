@@ -1,6 +1,6 @@
-fitst_title =  str(input("Введите первый заголовок: "))
-second_title = str(input("Введите второй заголовок: "))
-third_title = str(input("Введите третий заголовок: "))
+fitst_title =  input("Введите первый заголовок: ")
+second_title = input("Введите второй заголовок: ")
+third_title = input("Введите третий заголовок: ")
 title_ = [fitst_title, second_title, third_title]
 
 print("Первый заголовок: ", title_[0])
