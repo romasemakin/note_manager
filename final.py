@@ -1,18 +1,10 @@
-username = input("Введите имя: ")
-fitst_title =  input("Введите первый заголовок: ")
-second_title = input("Введите второй заголовок (если не нужен оставьте пустым): ")
-content = input("Введите описание: ")
-status = input("Введите статус заметки: ")
-created_date = input("Введите Дату создания в формате день, месяц ,год (10-10-2000): ")
-issue_date = input("Введите Дату истечения заметки в формате день, месяц ,год (10-10-2000): ")
-
 note_ = {
-    "username": username, # indx = 0
-    "content": content, # indx = 1
-    "status": status, # indx = 2
-    "created_date": created_date, # indx = 3
-    "issue_date": issue_date, # indx = 4
-    "titles": [fitst_title, second_title] # вложенный список для заголовков indx = 5
+    "username": input("Введите имя: "), # indx = 0
+    "titles": [input("Введите первый заголовок: "), input("Введите второй заголовок (если не нужен оставьте пустым): ")], # вложенный список для заголовков indx = 1
+    "content": input("Введите описание: "), # indx = 2
+    "status": input("Cтатус заметки: "), # indx = 3
+    "created_date": input("Введите Дату создания в формате день, месяц ,год (10-10-2000): "), # indx = 4
+    "issue_date": input("Введите Дату истечения заметки в формате день, месяц ,год (10-10-2000): "), # indx = 5
 }
 
 print("Здрастуйте,", note_["username"])
