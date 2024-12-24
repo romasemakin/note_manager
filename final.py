@@ -7,12 +7,12 @@ created_date = input("Введите Дату создания в формате
 issue_date = input("Введите Дату истечения заметки в формате день, месяц ,год (10-10-2000): ")
 
 note_ = {
-"username": username, # indx = 0
-"content": content, # indx = 1
-"status": status, # indx = 2
-"created_date": created_date, # indx = 3
-"issue_date": issue_date, # indx = 4
-"titles": [fitst_title, second_title] # вложенный список для заголовков indx = 5
+    "username": username, # indx = 0
+    "content": content, # indx = 1
+    "status": status, # indx = 2
+    "created_date": created_date, # indx = 3
+    "issue_date": issue_date, # indx = 4
+    "titles": [fitst_title, second_title] # вложенный список для заголовков indx = 5
 }
 
 print("Здрастуйте,", note_["username"])
