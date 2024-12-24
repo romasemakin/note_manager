@@ -9,6 +9,6 @@ note_ = {
 
 print("Здрастуйте,", note_["username"])
 print("Вот ваша заметка: ", note_["titles"][0], note_["titles"][1])
-print(note_["content"])
+print("Описание: ", note_["content"])
 print("Дата создания: ", note_["created_date"])
 print("Дата истечения заметки: ", note_["issue_date"])
