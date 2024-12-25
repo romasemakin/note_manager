@@ -1,5 +1,5 @@
 titles = []
-runorno = "Да"
+runorno = None
 
 while True:
     titles.append(input("Введите заголовок: "))
