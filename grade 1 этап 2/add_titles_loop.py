@@ -1,10 +1,11 @@
-titles = []
+titles = [] #Лист для заголовков 
 
 while True:
-    titles.append(input("Введите заголовок: "))
-    print(titles[-1])
-    end = input("Для завершения введите stop: ")
+    titles.append(input("Введите заголовок: ")) #Добавление в лист заголовков
+    print(titles[-1]) #Вывод написанного заголовка
+
+    end = input("Для завершения введите stop: ") #Завершенить или продолжить работу программы
     if end.lower() == "stop":
         break
 
-print("Все заголовки: ", titles)
+print("Все заголовки: ", titles) #Вывод всех заголовков
