@@ -4,7 +4,7 @@ while True:
     user_input = input("Введите дату дедлайна (в формате день-месяц-год, например, 10-10-2000): ")
 
     if len(user_input.split("-")) == 3:
-        day, month, year = user_input.split("-") #убираем -
+        day, month, year = user_input.split("-") #разделяем дату с помощью -
         
         if day.isdigit() and month.isdigit() and year.isdigit():
             try:
