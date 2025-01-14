@@ -4,7 +4,8 @@ while True:
     print("Желаете добавить заметку?")
     print("1 - Добавить заметку")
     print("2 - Написать список заметок")
-    print("3 - Выход") #мнею выбора
+    print("3 - Удалить заметку")
+    print("4 - Выход\n") #мнею выбора
 
     action = int(input("Выберите действие: ")) #выбор действия
 
@@ -18,7 +19,7 @@ while True:
             "Дедлайн": input("Введите дату истечения (дд-мм-гггг): ")
         }
         notes_.append(note)
-        print("Заметка добавлена успешно!")
+        print("Заметка добавлена успешно!\n")
 
     elif action == 2: #вывод списка заметок
         if notes_: 
@@ -36,9 +37,29 @@ while True:
         else:
             print("Список заметок пуст")
 
-    elif action == 3: #выход из программы
-        print("Выход из программы")
+    elif action == 3: #удаление заметки
+        print("Ведите номер заметки\n")
+        print("Список заметок:")
+        for i, note in enumerate(notes_, start=1):
+            print(f"Заметка {i}.")
+            print("Заголовок - " + notes_[i-1]["Заголовок"],"\n")
+
+        delete_index = input("Введите номер заметки(для выхода нажмите Enter): ")
+        delete_index =- 1
+
+        if 0 <= delete_index < len(notes_):
+            removed_note = notes_.pop(delete_index)
+            print(f"Заметка с заголовком '{removed_note['Заголовок']}' удалена.\n")
+
+        elif delete_index == None:
+            continue
+        
+        else:
+            print("Ошибка: такого номера заметки не существует. \n")
+
+    elif action == 4: #выход из программы
+        print("Выход из программы\n")
         break
 
     else: #если выбрано что-то не из списка
-        print("Нет такого пункта меню")
+        print("Нет такого пункта меню\n")
