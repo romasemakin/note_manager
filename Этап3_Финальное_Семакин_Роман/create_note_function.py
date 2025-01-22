@@ -1,7 +1,7 @@
 import datetime
-current_date = datetime.datetime.now().strftime("%d-%m-%Y")
+current_date = datetime.datetime.now().strftime("%d-%m-%Y") #текущая дата
 
-def create_note():
+def create_note(): #функция создания заметки
     note = {
             "username": input("Введите имя: "),
             "title": input("Введите заголовок: "),
@@ -17,4 +17,4 @@ def create_note():
     print("Дата создания - " + note["created_date"])
     print("Дедлайн - " + note["issue_date"])
     
-create_note()
+create_note() #вызов функции
